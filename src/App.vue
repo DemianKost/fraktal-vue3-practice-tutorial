@@ -1,19 +1,14 @@
 <template>
   <div id="app">
     <b-container>
-      <PlanetsList></PlanetsList>
+      <router-view></router-view>
     </b-container>
   </div>
 </template>
 
 <script>
-import PlanetsList from './components/PlanetsList.vue';
-
 export default {
-  name: 'App',
-  components: {
-    PlanetsList
-  }
+  name: 'App'
 }
 </script>
 

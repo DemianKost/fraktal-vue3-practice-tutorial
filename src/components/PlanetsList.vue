@@ -1,9 +1,9 @@
 <template>
     <b-row v-if="planets">
-        <b-col v-for="planet in planets" :key="planet.id" md="12" class="mb-4">
+        <b-col v-for="(planet, key) in planets" :key="key" md="12" class="mb-4">
             <b-card>
                 <b-card-body>
-                    <h3>{{ planet.name }}</h3>
+                    <router-link :to="'/view/' + parseInt( key + 1 )"><h3>{{ planet.name }}</h3></router-link>
                     <hr>
                     <p><b>Gravity: </b> {{ planet.gravity }}</p>
                     <p><b>Population: </b> {{ planet.population }}</p>
