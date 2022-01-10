@@ -1,14 +1,22 @@
 <template>
   <div id="app">
-    <b-container>
+    <Header></Header>
+    <b-container class="mt-5">
       <router-view></router-view>
     </b-container>
+    <Footer></Footer>
   </div>
 </template>
 
 <script>
+import Header from './components/Header.vue'
+import Footer from './components/Footer.vue'
+
 export default {
-  name: 'App'
+  name: 'App',
+  components: {
+    Header,
+    Footer
+  }
 }
 </script>
-

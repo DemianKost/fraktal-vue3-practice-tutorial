@@ -1,6 +1,6 @@
 import { createWebHistory, createRouter } from "vue-router";
-import PlanetsList from '../components/PlanetsList.vue';
-import PlanetView from '../components/PlanetView.vue';
+import PlanetsList from '../components/planets/PlanetsList.vue';
+import PlanetView from '../components/planets/PlanetView.vue';
 
 const routes = [
     {
